@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+[class*="cont-"] {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@media (min-width: 0) {
+.cont-1 {
+    background-image: url('../asset/images/dawn.png');
+    }
+    .sm {
+        position: absolute;
+        width: 70%;
+        bottom: 0;
+        left: 13%
+    }
+    .md{
+        display: none;
+
+    }
+    .lg{
+        display: none;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    .cont-2 {
+        background-image: url('../asset/images/night.jpg');
+    }
+    .md {
+        position: absolute;
+        bottom: 0%;
+        left: 30%;
+        display: block;
+    }
+    .sm {
+        display: none;
+    }
+
+    .lg {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .cont-3 {
+        background-image: url('../asset/images/sunny-day.jpg');
+
+    }
+
+    .lg {
+        position: absolute;
+        bottom: 5%;
+        left: 35%;
+        width: 35%;
+        display: block;
+    }
+
+    .md {
+        display: none;
+    }
+
+    .sm {
+        display: none;
+    }
+}
